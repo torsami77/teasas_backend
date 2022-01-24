@@ -10,7 +10,7 @@ const sinonChai = require('sinon-chai');
 
 chai.use(sinonChai);
 
-describe('Sample Test for User Model', () => {
+describe('Learner Model', () => {
   const User = UserModel(sequelize, dataTypes);
   const users = new User();
 
