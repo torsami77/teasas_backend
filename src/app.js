@@ -3,7 +3,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import path from 'path';
-// import router from './routes';
+import router from './routes';
 
 config();
 
@@ -24,16 +24,19 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/json' }));
-app.use(express.static('./api-docs'));
 app.use(cookieParser());
 
 const isProduction = process.env.NODE_ENV === 'production';
+
 // base route response
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve('./api-docs/index.html'));
+  res.status(200).json({
+    success: 'true',
+    message: 'Welcome to Teasas Technical Test API'
+  })
 });
 
-// app.use('/api/v1/', router);
+app.use('/api/v1/', router);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
@@ -71,6 +74,7 @@ app.use((err, req, res, next) => {
 
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);
+  console.log('base url: http://localhost:5000/')
 });
 
 export default app;
