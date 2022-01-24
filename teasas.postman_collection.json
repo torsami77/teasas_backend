@@ -1,0 +1,440 @@
+{
+	"variables": [],
+	"info": {
+		"name": "teasas",
+		"_postman_id": "82e9fec9-1361-d7f7-14ed-f7e3aed30446",
+		"description": "Teasas Technical Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sign up",
+			"request": {
+				"url": "http://localhost:5000/api/v1/auth/sign_up",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "torsami77@hotmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "childName",
+							"value": "Vida",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "08037367",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "countryCode",
+							"value": "234",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "grade",
+							"value": "grade1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ssssss",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Sign up route"
+			},
+			"response": [
+				{
+					"id": "0e1742ec-c565-4f24-880c-54caf04358c4",
+					"name": "sign up",
+					"originalRequest": {
+						"url": "http://localhost:5000/api/v1/auth/sign_up",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "torsami77@hotmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "childName",
+									"value": "Vida",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "phoneNumber",
+									"value": "08037367",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": "234",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "grade",
+									"value": "grade1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ssssss",
+									"description": "",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-headers",
+							"key": "access-control-allow-headers",
+							"value": "Content-Type",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"name": "access-control-allow-methods",
+							"key": "access-control-allow-methods",
+							"value": "GET,PATCH,POST,DELETE",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "512",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sun, 23 Jan 2022 01:20:43 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"200-vp5W0o/x1S4krhie2W8o/V/wz/Q\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 3791,
+					"body": "{\"statusCode\":201,\"status\":true,\"message\":\"learner created successfully\",\"data\":{\"id\":3,\"email\":\"torsami7@hotmail.com\",\"childName\":\"Vida\",\"phoneNumber\":8037367,\"countryCode\":234,\"grade\":\"grade1\",\"updatedAt\":\"2022-01-23T01:20:43.243Z\",\"createdAt\":\"2022-01-23T01:20:43.243Z\"},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiY2hpbGROYW1lIjoiVmlkYSIsImVtYWlsIjoidG9yc2FtaTdAaG90bWFpbC5jb20iLCJncmFkZSI6ImdyYWRlMSIsImlhdCI6MTY0MjkwMDg0MywiZXhwIjoxNjQyOTg3MjQzfQ.rihbOzVLK19NQbmIARMLgF1vs5PRK-L2bhmVPc0xIzY\"}"
+				}
+			]
+		},
+		{
+			"name": "sign_in",
+			"request": {
+				"url": "http://localhost:5000/api/v1/auth/sign_in",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "torsami77@hotmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ssssss",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Sign in Route"
+			},
+			"response": [
+				{
+					"id": "2e314876-d6dd-4067-ba1c-d87117103bd5",
+					"name": "sign_in",
+					"originalRequest": {
+						"url": "http://localhost:5000/api/v1/auth/sign_in",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "torsami77@hotmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ssssss",
+									"description": "",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-headers",
+							"key": "access-control-allow-headers",
+							"value": "Content-Type",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"name": "access-control-allow-methods",
+							"key": "access-control-allow-methods",
+							"value": "GET,PATCH,POST,DELETE",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "390",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sun, 23 Jan 2022 01:27:09 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"186-Ikg/MnlrRNPp3Z302pu7rn4cy+c\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 3141,
+					"body": "{\"statusCode\":200,\"status\":true,\"message\":\"Successfully Signed In\",\"data\":{\"id\":2,\"childName\":\"Vida\",\"email\":\"torsami77@hotmail.com\",\"grade\":\"grade1\"},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiY2hpbGROYW1lIjoiVmlkYSIsImVtYWlsIjoidG9yc2FtaTc3QGhvdG1haWwuY29tIiwiZ3JhZGUiOiJncmFkZTEiLCJpYXQiOjE2NDI5MDEyMjksImV4cCI6MTY0Mjk4NzYyOX0.Y-IS84KTR27FE3kKxUCwULrWRIGjhoOuWtvtg02h7k0\"}"
+				}
+			]
+		},
+		{
+			"name": "get all lessons",
+			"request": {
+				"url": "http://localhost:5000/api/v1/lessons/get_all_lessons",
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiY2hpbGROYW1lIjoiVmlkYSIsImVtYWlsIjoidG9yc2FtaTc3QGdtYWlsLmNvbSIsImdyYWRlIjoiZ3JhZGUxIiwiaWF0IjoxNjQyODk3Mjk1LCJleHAiOjE2NDI5ODM2OTV9.jhfA4VrN6A9vbDTpt59LcB9SPyV0tuuwvnHaiwB3gyI",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"description": "Get all lessons route"
+			},
+			"response": [
+				{
+					"id": "efe59981-79da-41d1-afb1-d752a34d2626",
+					"name": "get all lessons",
+					"originalRequest": {
+						"url": "http://localhost:5000/api/v1/lessons/get_all_lessons",
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiY2hpbGROYW1lIjoiVmlkYSIsImVtYWlsIjoidG9yc2FtaTc3QGdtYWlsLmNvbSIsImdyYWRlIjoiZ3JhZGUxIiwiaWF0IjoxNjQyODk3Mjk1LCJleHAiOjE2NDI5ODM2OTV9.jhfA4VrN6A9vbDTpt59LcB9SPyV0tuuwvnHaiwB3gyI",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						]
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-headers",
+							"key": "access-control-allow-headers",
+							"value": "Content-Type",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"name": "access-control-allow-methods",
+							"key": "access-control-allow-methods",
+							"value": "GET,PATCH,POST,DELETE",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "1007",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sun, 23 Jan 2022 01:30:15 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"3ef-19XtwcQzhMtzmSXqIKE71rDaMy4\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1239,
+					"body": "{\"statusCode\":200,\"status\":true,\"message\":\"success\",\"data\":[{\"id\":1,\"subjectName\":\"English\",\"startdate\":\"2022-01-23T01:00:22.712Z\",\"durationMinutes\":60,\"grade\":\"grade1\",\"createdAt\":\"2022-01-23T01:00:22.712Z\",\"updatedAt\":\"2022-01-23T01:00:22.712Z\"},{\"id\":2,\"subjectName\":\"Mathematics\",\"startdate\":\"2022-01-23T01:00:22.712Z\",\"durationMinutes\":60,\"grade\":\"grade1\",\"createdAt\":\"2022-01-23T01:00:22.712Z\",\"updatedAt\":\"2022-01-23T01:00:22.712Z\"},{\"id\":3,\"subjectName\":\"Physics\",\"startdate\":\"2022-01-23T01:00:22.712Z\",\"durationMinutes\":60,\"grade\":\"grade1\",\"createdAt\":\"2022-01-23T01:00:22.712Z\",\"updatedAt\":\"2022-01-23T01:00:22.712Z\"},{\"id\":4,\"subjectName\":\"Chemistry\",\"startdate\":\"2022-01-23T01:00:22.712Z\",\"durationMinutes\":60,\"grade\":\"grade1\",\"createdAt\":\"2022-01-23T01:00:22.712Z\",\"updatedAt\":\"2022-01-23T01:00:22.712Z\"},{\"id\":5,\"subjectName\":\"Biology\",\"startdate\":\"2022-01-23T01:00:22.712Z\",\"durationMinutes\":60,\"grade\":\"grade1\",\"createdAt\":\"2022-01-23T01:00:22.712Z\",\"updatedAt\":\"2022-01-23T01:00:22.712Z\"}]}"
+				}
+			]
+		}
+	]
+}
